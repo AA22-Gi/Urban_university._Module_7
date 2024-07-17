@@ -34,9 +34,8 @@ for root, dirs, files in os.walk(directory):
         # Размер файла
         filesize = os.path.getsize(filepath)
 
-        # Родительская директории файла
+        # Родительская директория файла
         parent_dir = os.path.dirname(filepath)
 
-        # Вывод информации о файле
         print(f'Обнаружен файл: {file}, Путь: {filepath}, Размер: {filesize} байт, '
               f'Время изменения: {formatted_time}, Родительская директория: {parent_dir}')
